@@ -1,6 +1,6 @@
 package excel
 
-func titleToNumber(columnTitle string) int {
+func GetExcelByLetters(columnTitle string) int {
     result := 0
     for i := 0; i < len(columnTitle); i++ {
         value := int(columnTitle[i] - 'A' + 1)
